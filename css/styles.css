@@ -1291,3 +1291,11 @@ button {
 }
 
 .team-roster .team-photo img { object-fit: cover; object-position: center 12%; }
+
+/* ===== FIRM LOGO ===== */
+.logo-img { height: 58px; width: auto; display: block; }
+.footer .logo-img { height: 64px; }
+.logo-dark { display: none; }
+[data-theme="dark"] .logo-light { display: none; }
+[data-theme="dark"] .logo-dark { display: block; }
+@media (max-width: 600px) { .logo-img { height: 44px; } }
