@@ -1,16 +1,17 @@
-# FRB Medicaid Landing Page (Draft)
+# FRB Medicaid Landing Page
 
 Medicaid ads landing page for Falcon Rappaport & Berkman LLP, built from the ai.frblaw.com template
 (plain HTML/CSS/JS, no build step — open `index.html` in a browser to preview).
 
-## Status: DRAFT
-- Text highlighted in yellow (`class="ph"`) is placeholder copy. Replace it with approved content from
-  https://frblaw.com/frb-medicaid/ before launch.
-- Attorney cards, headshots, and the contact email are still placeholders.
-- `<meta name="robots">` is set to `noindex, nofollow`. Change to `index, follow` at launch.
-- Remove the yellow "DRAFT" banner (`.draft-banner` in `index.html`) and the draft helper CSS at the end of `css/styles.css` at launch.
-- The contact form submits to the same HubSpot form as ai.frblaw.com (see `js/main.js`), and Google Tag Manager is included.
+Content comes from the existing Unbounce page at https://frblaw.com/frb-medicaid/.
+
+## Notes
+- `<meta name="robots">` is `noindex, nofollow` (same as the current Unbounce ad page). Change it if the page should appear in search.
+- The contact form submits to the same HubSpot form as ai.frblaw.com (`js/main.js`). The "Your Location" choice
+  and "Practice Area: Elder Law" are added to the top of the message field so they reach HubSpot without new form fields.
+- Google Tag Manager (GTM-5VVZ3BC) and HubSpot tracking (portal 49074578) are included.
+- Individual attorney headshots and the NELF/CELA logo were not available; the team group photo is used instead.
 
 ## Hosting
-Intended to deploy on Vercel the same way as ai.frblaw.com (Vercel → Add New → Project → this repository).
-Domain (e.g. a subdomain or a redirect from frblaw.com/medicaid-attorneys/) is TBD.
+Deploy on Vercel the same way as ai.frblaw.com (Vercel → Add New → Project → this repository).
+Domain (subdomain, or a redirect from frblaw.com/medicaid-attorneys/) is TBD.
