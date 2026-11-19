@@ -1289,3 +1289,5 @@ button {
     .header .logo-text { font-size: 0.95rem; white-space: nowrap; }
     .header-cta { display: none; }
 }
+
+.team-roster .team-photo img { object-fit: cover; object-position: center 12%; }

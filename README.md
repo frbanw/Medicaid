@@ -9,7 +9,7 @@ Content comes from the existing Unbounce page at https://frblaw.com/frb-medicaid
 - `<meta name="robots">` is `noindex, nofollow` (same as the current Unbounce ad page). Change it if the page should appear in search.
 - The contact form is the same one used on ai.frblaw.com and submits to the same HubSpot form (`js/main.js`).
 - Google Tag Manager (GTM-5VVZ3BC) and HubSpot tracking (portal 49074578) are included.
-- Individual attorney headshots and the NELF/CELA logo were not available; the team group photo is used instead.
+- Attorney headshots come from frblaw.com/professionals. The NELF/CELA logo from the original page is not included yet.
 
 ## Hosting
 Deploy on Vercel the same way as ai.frblaw.com (Vercel → Add New → Project → this repository).
