@@ -1252,16 +1252,35 @@ button {
 .policy-list li::before{content:"\2713";position:absolute;left:0;top:1px;color:var(--color-accent);font-weight:700;}
 @media(max-width:640px){.policy-list{grid-template-columns:1fr;gap:12px;}}
 
-/* ===== DRAFT HELPERS (remove before launch) ===== */
-.draft-banner {
-    position: fixed; bottom: 0; left: 0; right: 0; z-index: 2000;
-    background: #fde047; color: #422006; text-align: center;
-    font-size: 0.85rem; font-weight: 600; padding: 6px 16px;
+/* ===== MEDICAID PAGE ADDITIONS ===== */
+.hero-eyebrow {
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--color-accent); margin-bottom: 20px;
 }
-.ph { background: #fef08a; color: #422006; border-radius: 3px; padding: 0 3px; }
-.team-photo.ph-photo {
-    display: flex; align-items: center; justify-content: center;
-    background: var(--color-bg-tertiary); color: var(--color-text-muted);
-    font-size: 0.85rem; width: 173px; height: 200px; margin: 0 auto;
+.problem-text + .problem-text { margin-top: 20px; }
+
+.testimonials { padding: 100px 0; background-color: var(--color-bg-primary); }
+.testimonials-header { text-align: center; margin-bottom: 56px; }
+.testimonials-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
 }
-@media (max-width: 768px) { .draft-banner { bottom: 64px; } }
+.testimonial-card {
+    background: var(--color-bg-secondary); border: 1px solid var(--color-border);
+    border-bottom: 3px solid var(--color-accent); border-radius: 12px;
+    padding: 32px 28px; display: flex; flex-direction: column; gap: 20px;
+}
+.testimonial-stars { height: 20px; width: auto; align-self: flex-start; }
+.testimonial-quote { color: var(--color-text-secondary); line-height: 1.7; flex: 1; }
+.testimonial-name { font-weight: 600; color: var(--color-text-primary); }
+@media (max-width: 900px) { .testimonials-grid { grid-template-columns: 1fr; } }
+
+.team-photo-group {
+    max-width: 731px; margin: 0 auto 48px; text-align: center;
+}
+.team-photo-group img { width: 100%; height: auto; display: block; }
+.team-roster {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    max-width: 960px; margin: 0 auto;
+}
+.team-roster .team-member { padding: 20px 12px; }
+@media (max-width: 900px) { .team-roster { grid-template-columns: repeat(2, 1fr); } }
