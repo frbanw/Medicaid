@@ -122,17 +122,6 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => {
 // ===== HUBSPOT FORM SUBMISSION =====
 const contactForm = document.getElementById('contactForm');
 
-// Location and practice area are folded into the message so they reach HubSpot
-// without requiring new form fields.
-function buildMessage() {
-    const loc = document.getElementById('location');
-    const parts = ['Practice Area: Elder Law (Medicaid landing page)'];
-    if (loc && loc.value) parts.push('Location: ' + loc.value);
-    const msg = document.getElementById('message').value;
-    if (msg) parts.push('', msg);
-    return parts.join('\n');
-}
-
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -148,7 +137,7 @@ if (contactForm) {
                 { name: 'lastname', value: document.getElementById('lastname').value },
                 { name: 'email', value: document.getElementById('email').value },
                 { name: 'phone', value: document.getElementById('phone').value },
-                { name: 'brief_description_of_legal_issue', value: buildMessage() },
+                { name: 'brief_description_of_legal_issue', value: document.getElementById('message').value },
                 { name: 'i_agree_to_the__a_href__https___frblaw_com_terms_conditions___terms__amp__conditions__a__and__a_hre', value: document.getElementById('consent').checked ? 'true' : 'false' }
             ],
             context: {

@@ -7,8 +7,7 @@ Content comes from the existing Unbounce page at https://frblaw.com/frb-medicaid
 
 ## Notes
 - `<meta name="robots">` is `noindex, nofollow` (same as the current Unbounce ad page). Change it if the page should appear in search.
-- The contact form submits to the same HubSpot form as ai.frblaw.com (`js/main.js`). The "Your Location" choice
-  and "Practice Area: Elder Law" are added to the top of the message field so they reach HubSpot without new form fields.
+- The contact form is the same one used on ai.frblaw.com and submits to the same HubSpot form (`js/main.js`).
 - Google Tag Manager (GTM-5VVZ3BC) and HubSpot tracking (portal 49074578) are included.
 - Individual attorney headshots and the NELF/CELA logo were not available; the team group photo is used instead.
 
